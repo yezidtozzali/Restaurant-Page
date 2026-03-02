@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=BBH+Bartle&family=Bebas+Neue&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+*{
+    font-family: "Roboto",sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eef4ee;
+}
+
+header nav{
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 4px;
+    background-color: #eef4ee;
+}
+
+nav button {
+    font-size: 16px;
+    border: none;
+    background-color: #eef4ee;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+
+}
+/* le texte visible */
+nav button span {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+@keyframes rollDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(150%); }
+    51%  { transform: translateY(-150%); }
+    100% { transform: translateY(0); }
+}
+
+nav button:hover span {
+    animation: rollDown 0.25s ease forwards;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+}
+.main-image{
+    width: 100%;
+    object-fit: cover;
+    height: 75vh;
+    position: relative;
+}
+
+.button-primary{
+    width: 140px;
+    height: 50px;
+    align-self: center;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    background-color: #4e8a4200;
+    cursor: pointer;
+    position: absolute;
+    bottom: 270px;
+    box-sizing: border-box;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.button-primary:hover{
+    background-color: #ffffff;
+    color: #004900;
+    transform: 0.3s ease;
+}
+
+.title{
+    font-family: "sora", sans-serif;
+    font-size: 120px;
+    margin: 0;
+    letter-spacing: -4px;
+    color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.300);
+}
+
+.info{
+    align-self: flex-start;
+}
