@@ -9,14 +9,20 @@ body{
     padding: 0;
     background-color: #eef4ee;
 }
+header{
+    position: sticky;
+    top:0;
+    z-index: 100;;
+
+}   
 
 header nav{
-    margin: 8px;
+    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 64px;
-    padding: 4px;
+    padding: 16px 4px;
     background-color: #eef4ee;
 }
 
@@ -58,10 +64,17 @@ nav button:hover span {
     display: flex;
     flex-direction: column;
 }
+
+.home{
+    display: flex;
+    flex-direction: column;
+
+}
+
 .main-image{
     width: 100%;
     object-fit: cover;
-    height: 75vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -77,26 +90,26 @@ nav button:hover span {
     background-color: #4e8a4200;
     cursor: pointer;
     position: absolute;
-    bottom: 270px;
+    bottom: 40%;
     box-sizing: border-box;
     color: #ffffff;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
 .button-primary:hover{
     background-color: #ffffff;
     color: #004900;
-    transform: 0.3s ease;
+    transform: 0.4s ease;
 }
 
 .title{
     font-family: "sora", sans-serif;
     font-size: 120px;
     margin: 0;
-    letter-spacing: -4px;
+    letter-spacing: -8px;
     color: #ffffff;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.300);
@@ -104,4 +117,148 @@ nav button:hover span {
 
 .info{
     align-self: flex-start;
+}
+
+.adress{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.300);
+}
+
+
+.story{
+    display: flex;
+    align-items: flex-start;
+    gap: 240px;
+}
+
+.story-image{
+    justify-items: flex-start;
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+}
+
+.divtext{
+    justify-content: center;
+    align-items: center;
+}
+
+.pstory{
+    white-space: pre-line;
+    width: 80%;
+    font-size: 16px;
+    margin-bottom: 80px;
+    color: #4c5c4c;
+}
+
+h2{
+    font-family: "Sora", "Roboto", sans-serif;
+    font-size: 36px;
+    margin: 80px 0px 40px 0px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #000000;
+}
+
+.button-reservation{
+    width: 140px;
+    height: 50px;
+    align-self: center;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: 2px solid #004900;
+    font-size: 20px;
+    background-color: #4e8a4200;
+    cursor: pointer;
+    transition: 0.4s ease;
+    color: #004900;
+}
+
+.button-reservation:hover{
+    background-color: #004900;
+    transform: 0.4s ease;
+    color:#ffffff;
+    
+}
+
+.story, .menu {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 40px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu-image{
+    justify-items: flex-end;
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 100px;
+    
+}
+h3{
+    color: #4c5c4c;
+    letter-spacing: -1px;
+}
+li{
+    font-size: 16px;
+    color: #4c5c4c;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    width: 80%;
+
+}
+
+li span:last-child{
+    font-weight: 500;
+}
+.menu-div{
+    margin-top: -80px;
+}
+
+/*footer----------------------*/
+
+.footer{
+    max-width: 1200px;
+    margin: 200px auto 4px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 240px;
+    background-color: #eef4ee;
+}
+.footer h2{
+    font-family: "Sora", "Roboto", sans-serif;
+    font-size: 46px;
+    margin: 0px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #000000;
+    align-self: flex-start;
+}
+
+
+.pfooter{
+    white-space: pre-line;
+    color: #4c5c4c;
+}   
+
+.pfooter:last-child{
+    text-align: end;
 }
