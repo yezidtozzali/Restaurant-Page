@@ -16,6 +16,7 @@
   "homepage": "https://github.com/yezidtozzali/Restaurant-Page#readme",
   "devDependencies": {
     "css-loader": "^7.1.4",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.3",
@@ -24,6 +25,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "deploy": "gh-pages -d dist"
   }
 }

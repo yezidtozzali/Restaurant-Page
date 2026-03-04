@@ -23,7 +23,7 @@ Fondé en 2019 dans une ancienne riad, notre restaurant puise son inspiration da
 Ici, pas de compromis — juste des saveurs vraies, une atmosphère chaleureuse, et une table où il fait bon s'attarder.`
 
     const resevationButtonStory = document.createElement("button");
-    resevationButtonStory.textContent ="Réserver";
+    resevationButtonStory.textContent ="Voir les menus";
     resevationButtonStory.classList.add("button-reservation");
 
     

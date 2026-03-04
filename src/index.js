@@ -67,3 +67,9 @@ menuBtn.addEventListener("click", () => {
 horairesBtn.addEventListener("click", () => {
     document.getElementById("footer").scrollIntoView({behavior: "smooth"});
 });
+
+const resevationButtonStory = document.querySelector(".button-reservation");
+
+resevationButtonStory.addEventListener("click", () => {
+    document.getElementById("menu").scrollIntoView({behavior: "smooth"});
+});
